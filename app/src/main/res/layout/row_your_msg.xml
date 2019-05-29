@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-30dp"
+    android:paddingBottom="8dp"
+    android:background="#F9FAFC"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_your_msg__name"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="None"
+            android:textColor="#1b1b1b" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/border_your_msg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:id="@+id/row_your_msg__txt"
+                android:paddingLeft="50dp"
+                android:paddingRight="30dp"
+                android:paddingTop="16dp"
+                android:text="Helloo"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

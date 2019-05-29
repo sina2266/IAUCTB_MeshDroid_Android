@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name = "android:windowActionBar">false</item>
+        <item name = "android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="HampaAppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/lightSilver</item>
+        <item name="colorPrimaryDark">@color/statusBarColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--
+        <item name="android:windowFullscreen">true</item>
+-->
+
+
+    </style>
+
+
+    <style name="searchingPageTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--
+        <item name="android:windowFullscreen">true</item>
+-->
+
+
+    </style>
+
+
+
+    <!--   <style name = "AppTheme" parent = "android:Theme.Holo.Light.DarkActionBar">
+           &lt;!&ndash; Customize your theme here. &ndash;&gt;
+       </style>
+
+       <style name = "NoActionBar" parent = "@android:style/Theme.Holo.Light">
+
+       </style>-->
+
+
+
+
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFC"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/activity_main__toolbar_parent"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fff"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/activity_main__toolbar_back_btn"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/activity_main__toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Live chat"
+                android:textColor="#8A94A2"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/activity_main__toolbar_peer_counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/activity_main__toolbar_title"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="-4dp"
+                android:layout_toRightOf="@id/activity_main__toolbar_title"
+                android:background="@drawable/bg_badge"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="2dp"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="10dp" />
+
+
+            <ImageView
+                android:id="@+id/activity_main__toolbar_more_btn"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:src="@drawable/more" />
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_main__msg_chat_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/activity_main__msg_parent"
+            android:layout_below="@id/activity_main__toolbar_parent"
+            android:background="#F9FAFC"
+
+        />
+
+
+        <RelativeLayout
+            android:id="@+id/activity_main__msg_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/activity_main__msg_emoji_btn"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:padding="12dp"
+                android:src="@drawable/emoji" />
+
+            <EditText
+                android:id="@+id/activity_main__msg_box_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/activity_main__msg_send_btn"
+                android:layout_toRightOf="@id/activity_main__msg_emoji_btn"
+                android:background="#00000000"
+                android:hint="Type something"
+                android:padding="8dp"
+                android:textColor="#8A94A2"
+                android:textSize="13dp" />
+
+
+            <ImageView
+                android:id="@+id/activity_main__msg_send_btn"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="12dp"
+                android:src="@drawable/send" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
